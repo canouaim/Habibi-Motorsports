@@ -4,19 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Habibi Motorsports — Precision Rebuilt Transmissions | Clayton, NC</title>
-<meta name="description" content="Habibi Motorsports rebuilds automatic and performance transmissions in Clayton, NC. Ford 10R80 rebuilds, performance builds, and drop-off installation available.">
+<meta name="description" content="Habibi Motorsports rebuilds automatic and performance transmissions in Clayton, NC.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --gold:#C9A84C;--red:#C0392B;--red2:#E74C3C;
-  --dark:#0A0A0A;--dark2:#111;--dark3:#1A1A1A;--dark4:#222;
-  --text:#F0EDE8;--muted:#777;--border:rgba(201,168,76,0.18);
-}
+:root{--gold:#C9A84C;--red:#C0392B;--red2:#E74C3C;--green:#1a6b3a;--dark:#0A0A0A;--dark2:#111;--dark3:#1A1A1A;--dark4:#222;--text:#F0EDE8;--muted:#777;--border:rgba(201,168,76,0.18)}
 html{scroll-behavior:smooth}
 body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;margin:0;padding:0}
-
-/* NAV */
 .nav{display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:56px;background:rgba(10,10,10,0.98);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:3px;color:var(--gold);cursor:pointer}
 .nav-logo span{color:var(--text)}
@@ -25,13 +19,12 @@ body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--text);ov
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .nav-right{display:flex;align-items:center;gap:.8rem}
 .nav-phone{font-family:'Barlow Condensed',sans-serif;font-size:.76rem;font-weight:600;color:var(--muted)}
+.nav-cart-btn{background:var(--dark3);color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--border);padding:.38rem 1rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.4rem}
+.nav-cart-btn:hover{border-color:var(--gold);color:var(--gold)}
+.cart-badge{background:var(--red);color:#fff;font-size:.6rem;font-weight:700;border-radius:50%;width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center}
 .nav-cta{background:var(--red);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:none;padding:.38rem 1rem;cursor:pointer;transition:background .2s}
 .nav-cta:hover{background:var(--red2)}
-
-/* PAGES */
 .page{display:none}.page.active{display:block}
-
-/* HERO */
 .hero{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2.2rem 2rem 2rem;overflow:hidden;background:var(--dark)}
 .hero-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(201,168,76,0.03) 0,rgba(201,168,76,0.03) 1px,transparent 1px,transparent 80px),repeating-linear-gradient(0deg,rgba(201,168,76,0.03) 0,rgba(201,168,76,0.03) 1px,transparent 1px,transparent 80px);pointer-events:none}
 .hero-glow{position:absolute;inset:0;background:radial-gradient(ellipse 65% 55% at 50% 40%,rgba(192,57,43,0.13) 0%,transparent 68%);pointer-events:none}
@@ -52,24 +45,17 @@ body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--text);ov
 .stat:last-child{border-right:none}
 .stat-num{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--gold);letter-spacing:2px}
 .stat-label{font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-
-/* MARQUEE */
 .marquee-wrap{background:var(--red);padding:.42rem 0;overflow:hidden;white-space:nowrap}
-.marquee-inner{display:inline-block;animation:ticker 22s linear infinite}
+.marquee-inner{display:inline-block;animation:ticker 28s linear infinite}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .m-item{font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fff;margin:0 1.4rem;display:inline-block}
 .m-dot{display:inline-block;width:3px;height:3px;background:rgba(255,255,255,0.4);border-radius:50%;vertical-align:middle}
-
-/* SECTIONS */
-.sec{padding:2.2rem 2rem}
-.sec-alt{padding:2.2rem 2rem;background:var(--dark2)}
+.sec{padding:2.2rem 2rem}.sec-alt{padding:2.2rem 2rem;background:var(--dark2)}
 .sec-tag{font-family:'Barlow Condensed',sans-serif;font-size:.63rem;letter-spacing:4px;text-transform:uppercase;color:var(--red2);font-weight:700;margin-bottom:.35rem}
 .sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,3.5vw,2.4rem);letter-spacing:3px;color:var(--text);margin-bottom:.2rem}
 .sec-title .gold{color:var(--gold)}
 .divider{width:40px;height:3px;background:var(--red);margin:.6rem 0 .9rem}
 .sec-sub{font-size:.82rem;color:var(--muted);line-height:1.65;max-width:430px}
-
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;align-items:center}
 .about-img{position:relative;background:linear-gradient(135deg,#1a1a1a,#2a1010,#111);height:210px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);overflow:hidden;font-size:4.5rem;color:rgba(201,168,76,0.1)}
 .about-img::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(201,168,76,0.03) 0,rgba(201,168,76,0.03) 1px,transparent 1px,transparent 20px)}
@@ -78,16 +64,12 @@ body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--text);ov
 .about-list li{display:flex;align-items:center;gap:.55rem;font-size:.8rem;color:var(--muted)}
 .about-list li::before{content:'';display:block;width:14px;height:2px;background:var(--gold);flex-shrink:0}
 .about-list li span{color:var(--text)}
-
-/* WHY */
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:1.2rem}
 .why-card{background:var(--dark3);border:1px solid var(--border);padding:1rem;border-top:3px solid transparent;transition:border-top-color .2s}
 .why-card:hover{border-top-color:var(--red)}
 .why-icon{font-size:1.2rem;margin-bottom:.5rem}
 .why-title{font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);margin-bottom:.25rem}
 .why-desc{font-size:.73rem;color:var(--muted);line-height:1.55}
-
-/* PROCESS */
 .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:1.2rem}
 .step{padding:1rem;border:1px solid var(--border);border-right:none;background:var(--dark3);position:relative}
 .step:last-child{border-right:1px solid var(--border)}
@@ -95,8 +77,6 @@ body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--text);ov
 .step-title{font-family:'Barlow Condensed',sans-serif;font-size:.83rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);margin-bottom:.2rem}
 .step-desc{font-size:.71rem;color:var(--muted);line-height:1.5}
 .step-arrow{position:absolute;right:-9px;top:50%;transform:translateY(-50%);width:18px;height:18px;background:var(--red);display:flex;align-items:center;justify-content:center;z-index:2;font-size:.55rem;color:#fff}
-
-/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:2rem;align-items:start;margin-top:1.2rem}
 .contact-detail{display:flex;gap:.6rem;margin-bottom:.85rem;align-items:flex-start}
 .c-icon{font-size:.9rem;flex-shrink:0;margin-top:.05rem}
@@ -104,15 +84,16 @@ body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--text);ov
 .c-val{font-size:.82rem;color:var(--text)}
 .form-group{margin-bottom:.65rem}
 .form-label{font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-bottom:.28rem}
+.form-label .req{color:var(--red2)}
 .form-input{width:100%;background:var(--dark4);color:var(--text);border:1px solid var(--border);padding:.6rem .8rem;font-family:'Barlow',sans-serif;font-size:.83rem;transition:border-color .2s}
 .form-input:focus{outline:none;border-color:var(--gold)}
 .form-input::placeholder{color:var(--muted)}
 textarea.form-input{min-height:80px;resize:vertical}
 .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}
+.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.form-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.7rem}
 .form-submit{width:100%;background:var(--red);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:3px;border:none;padding:.75rem;cursor:pointer;transition:background .2s;margin-top:.25rem}
 .form-submit:hover{background:var(--red2)}
-
-/* FOOTER */
 .footer{background:var(--dark);border-top:1px solid var(--border);padding:1.2rem 2rem}
 .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.8rem;margin-bottom:.9rem;padding-bottom:.9rem;border-bottom:1px solid var(--border)}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:3px;color:var(--gold)}
@@ -122,74 +103,112 @@ textarea.form-input{min-height:80px;resize:vertical}
 .footer-links a:hover{color:var(--gold)}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem}
 .footer-copy{font-size:.66rem;color:var(--muted)}
-
-/* SHOP */
 .shop-hero{background:var(--dark2);padding:1.6rem 2rem 1.2rem;border-bottom:1px solid var(--border)}
 .shop-filters{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.9rem}
 .filter-btn{background:var(--dark4);color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--border);padding:.35rem .9rem;cursor:pointer;transition:all .2s}
 .filter-btn:hover,.filter-btn.active{background:var(--red);color:#fff;border-color:var(--red)}
-.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1rem;padding:1.6rem 2rem}
-
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;padding:1.6rem 2rem}
 .prod-card{background:var(--dark3);border:1px solid var(--border);overflow:hidden;transition:border-color .2s,transform .2s}
 .prod-card:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-3px)}
-.prod-card-img{width:100%;height:140px;background:linear-gradient(135deg,#1a1a1a,#2a1010,#0f0f0f);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;font-size:2.8rem;color:rgba(255,255,255,0.12)}
+.prod-card-img{width:100%;height:130px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;font-size:2.5rem;color:rgba(255,255,255,0.1)}
 .prod-card-img::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(201,168,76,0.03) 0,rgba(201,168,76,0.03) 1px,transparent 1px,transparent 20px)}
 .prod-badge{position:absolute;top:.6rem;left:.6rem;font-family:'Barlow Condensed',sans-serif;font-size:.58rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:.16rem .5rem;z-index:2}
-.b-red{background:var(--red);color:#fff}
-.prod-body{padding:1.1rem}
-.prod-name{font-family:'Bebas Neue',sans-serif;font-size:1.25rem;letter-spacing:2px;color:var(--text);margin-bottom:.15rem}
-.prod-fits{font-size:.67rem;color:var(--gold);letter-spacing:.5px;margin-bottom:.35rem;font-weight:600}
-.prod-desc{font-size:.74rem;color:var(--muted);line-height:1.55;margin-bottom:.75rem}
-.prod-price{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold)}
-.prod-price sub{font-family:'Barlow',sans-serif;font-size:.62rem;color:var(--muted);font-weight:400;vertical-align:baseline}
-
-.config-section{margin-top:.8rem;padding-top:.8rem;border-top:1px solid var(--border)}
-.config-lbl{font-size:.6rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.45rem}
-.warranty-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:.3rem;margin-bottom:.75rem}
-.w-btn{background:var(--dark4);border:1px solid var(--border);color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:700;text-transform:uppercase;padding:.45rem .2rem;cursor:pointer;transition:all .2s;text-align:center;line-height:1.2}
+.b-red{background:var(--red);color:#fff}.b-gold{background:var(--gold);color:var(--dark)}
+.prod-body{padding:1rem}
+.prod-name{font-family:'Bebas Neue',sans-serif;font-size:1.25rem;letter-spacing:2px;color:var(--text);margin-bottom:.12rem}
+.prod-fits{font-size:.65rem;color:var(--gold);letter-spacing:.5px;margin-bottom:.3rem;font-weight:600}
+.prod-desc{font-size:.72rem;color:var(--muted);line-height:1.5;margin-bottom:.7rem}
+.prod-price{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--gold)}
+.prod-price sub{font-family:'Barlow',sans-serif;font-size:.6rem;color:var(--muted);font-weight:400;vertical-align:baseline}
+.config-section{margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border)}
+.config-lbl{font-size:.58rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.4rem}
+.warranty-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:.28rem;margin-bottom:.7rem}
+.w-btn{background:var(--dark4);border:1px solid var(--border);color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-size:.68rem;font-weight:700;text-transform:uppercase;padding:.42rem .15rem;cursor:pointer;transition:all .2s;text-align:center;line-height:1.2}
 .w-btn:hover{border-color:rgba(201,168,76,0.4);color:var(--text)}
 .w-btn.sel{background:rgba(201,168,76,0.1);border-color:var(--gold);color:var(--gold)}
-.w-btn .w-sub{display:block;font-family:'Barlow',sans-serif;font-size:.57rem;font-weight:400;color:var(--muted);margin-top:.08rem}
+.w-btn .w-sub{display:block;font-family:'Barlow',sans-serif;font-size:.55rem;font-weight:400;color:var(--muted);margin-top:.06rem}
 .w-btn.sel .w-sub{color:rgba(201,168,76,0.7)}
-.labor-row{display:flex;align-items:flex-start;gap:.6rem;background:var(--dark4);border:1px solid var(--border);padding:.75rem;cursor:pointer;margin-bottom:.8rem;transition:border-color .2s}
+.labor-row{display:flex;align-items:flex-start;gap:.55rem;background:var(--dark4);border:1px solid var(--border);padding:.7rem;cursor:pointer;margin-bottom:.75rem;transition:border-color .2s}
 .labor-row:hover{border-color:rgba(201,168,76,0.3)}
 .labor-row.on{border-color:var(--gold);background:rgba(201,168,76,0.05)}
-.chk{width:15px;height:15px;border:1.5px solid var(--border);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.chk{width:14px;height:14px;border:1.5px solid var(--border);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:all .2s}
 .labor-row.on .chk{background:var(--gold);border-color:var(--gold)}
-.chk-mark{font-size:.55rem;color:var(--dark);font-weight:700;display:none}
+.chk-mark{font-size:.5rem;color:var(--dark);font-weight:700;display:none}
 .labor-row.on .chk-mark{display:block}
-.labor-info-title{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text)}
-.labor-info-desc{font-size:.68rem;color:var(--muted);line-height:1.45;margin:.12rem 0}
-.labor-price-tag{font-family:'Bebas Neue',sans-serif;font-size:.9rem;color:var(--gold)}
-.total-row{display:flex;justify-content:space-between;align-items:flex-end;padding-top:.8rem;border-top:1px solid var(--border)}
-.total-lbl{font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:.08rem}
-.total-val{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--gold)}
-.add-btn{background:var(--red);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.82rem;letter-spacing:2px;border:none;padding:.65rem 1.2rem;cursor:pointer;transition:background .2s,transform .15s;white-space:nowrap}
+.labor-info-title{font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text)}
+.labor-info-desc{font-size:.65rem;color:var(--muted);line-height:1.4;margin:.1rem 0}
+.labor-price-tag{font-family:'Bebas Neue',sans-serif;font-size:.85rem;color:var(--gold)}
+.total-row{display:flex;justify-content:space-between;align-items:flex-end;padding-top:.75rem;border-top:1px solid var(--border)}
+.total-lbl{font-size:.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:.06rem}
+.total-val{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--gold)}
+.add-btn{background:var(--red);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:.78rem;letter-spacing:2px;border:none;padding:.6rem 1.1rem;cursor:pointer;transition:background .2s,transform .15s;white-space:nowrap}
 .add-btn:hover{background:var(--red2);transform:scale(1.03)}
-
+.add-btn.added{background:#1a6b3a}
 .perf-card{background:linear-gradient(135deg,var(--dark3),#1a0505);border:1px solid rgba(192,57,43,0.3)}
 .perf-card:hover{border-color:rgba(192,57,43,0.6);transform:translateY(-3px)}
-.perf-cta-btn{width:100%;background:transparent;color:var(--red2);font-family:'Bebas Neue',sans-serif;font-size:.9rem;letter-spacing:2px;border:1.5px solid var(--red2);padding:.7rem;cursor:pointer;margin-top:.9rem;transition:all .2s}
+.perf-cta-btn{width:100%;background:transparent;color:var(--red2);font-family:'Bebas Neue',sans-serif;font-size:.88rem;letter-spacing:2px;border:1.5px solid var(--red2);padding:.65rem;cursor:pointer;margin-top:.85rem;transition:all .2s}
 .perf-cta-btn:hover{background:var(--red);color:#fff;border-color:var(--red)}
-
-.toast{position:fixed;bottom:1.2rem;right:1.2rem;background:var(--dark3);border:1px solid var(--gold);padding:.7rem 1.1rem;z-index:999;transform:translateY(120px);transition:transform .3s;font-size:.78rem;color:var(--text);max-width:260px}
+.cart-page{padding:1.8rem 2rem;max-width:900px;margin:0 auto}
+.cart-empty-state{text-align:center;padding:3rem 2rem}
+.cart-empty-icon{font-size:3rem;margin-bottom:1rem;opacity:.3}
+.cart-empty-text{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:2px;color:var(--muted);margin-bottom:.5rem}
+.cart-empty-sub{font-size:.82rem;color:var(--muted);margin-bottom:1.5rem}
+.cart-items-list{display:flex;flex-direction:column;gap:.8rem;margin-bottom:1.5rem}
+.cart-item{background:var(--dark3);border:1px solid var(--border);padding:1.1rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
+.ci-name{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:2px;color:var(--text);margin-bottom:.2rem}
+.ci-details{font-size:.72rem;color:var(--muted);line-height:1.65}
+.ci-details span{color:var(--gold);font-weight:600}
+.ci-right{text-align:right;flex-shrink:0}
+.ci-price{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--gold)}
+.ci-remove{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red2);background:none;border:none;cursor:pointer;margin-top:.3rem;display:block}
+.ci-remove:hover{color:var(--red)}
+.cart-summary{background:var(--dark2);border:1px solid var(--border);padding:1.2rem;margin-bottom:1.5rem}
+.summary-row{display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted);margin-bottom:.5rem;align-items:center}
+.summary-row.grand-total{border-top:2px solid var(--gold);padding-top:.8rem;margin-top:.5rem}
+.summary-row.grand-total .label{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:1px;color:var(--text)}
+.summary-row.grand-total .val{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold)}
+.summary-row .tax{color:#f0c040}
+.summary-row .surcharge{color:var(--red2)}
+.summary-row .savings{color:#4caf50}
+.summary-divider{border:none;border-top:1px solid var(--border);margin:.5rem 0}
+.payment-toggle{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1.2rem}
+.pay-opt{background:var(--dark4);border:2px solid var(--border);padding:1rem;cursor:pointer;transition:all .2s;text-align:center}
+.pay-opt:hover{border-color:rgba(201,168,76,0.3)}
+.pay-opt.sel-cash{border-color:#4caf50;background:rgba(76,175,80,0.07)}
+.pay-opt.sel-card{border-color:var(--gold);background:rgba(201,168,76,0.07)}
+.pay-opt-icon{font-size:1.4rem;margin-bottom:.4rem}
+.pay-opt-title{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:1.5px;color:var(--text);margin-bottom:.2rem}
+.pay-opt-desc{font-size:.68rem;color:var(--muted);line-height:1.4}
+.pay-opt-tag{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:.4rem;padding:.18rem .5rem;display:inline-block}
+.tag-green{background:rgba(76,175,80,0.15);color:#4caf50;border:1px solid rgba(76,175,80,0.3)}
+.tag-gold{background:rgba(201,168,76,0.12);color:var(--gold);border:1px solid rgba(201,168,76,0.3)}
+.checkout-form{background:var(--dark2);border:1px solid var(--border);padding:1.4rem}
+.form-section-title{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:2px;color:var(--gold);margin-bottom:.9rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.vin-note{font-size:.68rem;color:var(--muted);margin-top:.25rem;line-height:1.4}
+.card-fields{background:var(--dark4);border:1px solid var(--border);padding:1rem;margin-top:.8rem}
+.card-fields-title{font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.7rem}
+.place-order-btn{width:100%;background:var(--red);color:#fff;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:3px;border:none;padding:.9rem;cursor:pointer;transition:background .2s;margin-top:1rem}
+.place-order-btn:hover{background:var(--red2)}
+.place-order-btn.cash{background:#1a6b3a}
+.place-order-btn.cash:hover{background:#238a4d}
+.success-page{text-align:center;padding:3rem 2rem;max-width:600px;margin:0 auto}
+.success-icon{font-size:3rem;margin-bottom:1rem}
+.success-title{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:3px;color:var(--gold);margin-bottom:.5rem}
+.success-sub{font-size:.88rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem}
+.success-order{background:var(--dark3);border:1px solid var(--border);padding:1.2rem;text-align:left;margin-bottom:1.5rem}
+.so-row{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-bottom:.4rem}
+.so-row span{color:var(--text)}
+.so-total{border-top:2px solid var(--gold);padding-top:.7rem;margin-top:.4rem;display:flex;justify-content:space-between}
+.so-total-label{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:1px;color:var(--text)}
+.so-total-val{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gold)}
+.toast{position:fixed;bottom:1.2rem;right:1.2rem;background:var(--dark3);border:1px solid var(--gold);padding:.7rem 1.1rem;z-index:999;transform:translateY(120px);transition:transform .3s;font-size:.78rem;color:var(--text);max-width:280px}
 .toast.show{transform:translateY(0)}
 .toast strong{color:var(--gold)}
-
-@media(max-width:700px){
-  .about-grid,.contact-grid{grid-template-columns:1fr}
-  .why-grid{grid-template-columns:1fr 1fr}
-  .process-steps{grid-template-columns:1fr 1fr}
-  .step-arrow{display:none}
-  .hero-stats{flex-wrap:wrap}
-  .stat{padding:.7rem 1.1rem}
-  .nav-phone{display:none}
-}
+@media(max-width:700px){.about-grid,.contact-grid,.form-grid-2,.form-grid-3,.form-row-2{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.process-steps{grid-template-columns:1fr 1fr}.step-arrow{display:none}.hero-stats{flex-wrap:wrap}.stat{padding:.7rem 1.1rem}.nav-phone{display:none}.payment-toggle{grid-template-columns:1fr}.cart-item{flex-direction:column}.ci-right{text-align:left}}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <div class="nav">
   <div class="nav-logo" onclick="showPage('home')">HABIBI <span>MOTORSPORTS</span></div>
   <ul class="nav-links">
@@ -200,17 +219,15 @@ textarea.form-input{min-height:80px;resize:vertical}
   </ul>
   <div class="nav-right">
     <span class="nav-phone">(919) 555-0100</span>
+    <button class="nav-cart-btn" onclick="showPage('cart')">🛒 CART <span class="cart-badge" id="cart-badge">0</span></button>
     <button class="nav-cta" onclick="showPage('home');setTimeout(()=>document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'}),80)">GET A QUOTE</button>
   </div>
 </div>
 
-<!-- ===== HOME PAGE ===== -->
+<!-- HOME -->
 <div class="page active" id="page-home">
-
   <div class="hero">
-    <div class="hero-grid"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-top-line"></div>
+    <div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-top-line"></div>
     <div class="hero-content">
       <div class="hero-eyebrow">Clayton, NC &nbsp;·&nbsp; Precision Rebuilt Transmissions</div>
       <h1 class="hero-h1">BUILT FOR<br><span class="gold">POWER.</span><br>BUILT TO<br><span class="red">LAST.</span></h1>
@@ -227,30 +244,10 @@ textarea.form-input{min-height:80px;resize:vertical}
       </div>
     </div>
   </div>
-
-  <div class="marquee-wrap">
-    <div class="marquee-inner">
-      <span class="m-item">10R80 Rebuild</span><span class="m-dot"></span>
-      <span class="m-item">Performance Builds</span><span class="m-dot"></span>
-      <span class="m-item">3-Year Warranty Available</span><span class="m-dot"></span>
-      <span class="m-item">Drop-Off Installation</span><span class="m-dot"></span>
-      <span class="m-item">Tested Before It Ships</span><span class="m-dot"></span>
-      <span class="m-item">Clayton NC</span><span class="m-dot"></span>
-      <span class="m-item">10R80 Rebuild</span><span class="m-dot"></span>
-      <span class="m-item">Performance Builds</span><span class="m-dot"></span>
-      <span class="m-item">3-Year Warranty Available</span><span class="m-dot"></span>
-      <span class="m-item">Drop-Off Installation</span><span class="m-dot"></span>
-      <span class="m-item">Tested Before It Ships</span><span class="m-dot"></span>
-      <span class="m-item">Clayton NC</span><span class="m-dot"></span>
-    </div>
-  </div>
-
+  <div class="marquee-wrap"><div class="marquee-inner"><span class="m-item">10R80</span><span class="m-dot"></span><span class="m-item">10L80</span><span class="m-dot"></span><span class="m-item">10L90</span><span class="m-dot"></span><span class="m-item">10R140</span><span class="m-dot"></span><span class="m-item">6L80</span><span class="m-dot"></span><span class="m-item">6R80</span><span class="m-dot"></span><span class="m-item">8F35</span><span class="m-dot"></span><span class="m-item">8L90</span><span class="m-dot"></span><span class="m-item">Performance Builds</span><span class="m-dot"></span><span class="m-item">Clayton NC</span><span class="m-dot"></span><span class="m-item">10R80</span><span class="m-dot"></span><span class="m-item">10L80</span><span class="m-dot"></span><span class="m-item">10L90</span><span class="m-dot"></span><span class="m-item">10R140</span><span class="m-dot"></span><span class="m-item">6L80</span><span class="m-dot"></span><span class="m-item">6R80</span><span class="m-dot"></span><span class="m-item">8F35</span><span class="m-dot"></span><span class="m-item">8L90</span><span class="m-dot"></span><span class="m-item">Performance Builds</span><span class="m-dot"></span><span class="m-item">Clayton NC</span><span class="m-dot"></span></div></div>
   <div class="sec-alt">
     <div class="about-grid">
-      <div class="about-img">
-        <div class="about-accent"></div>
-        ⚙
-      </div>
+      <div class="about-img"><div class="about-accent"></div>⚙</div>
       <div>
         <div class="sec-tag">About Us</div>
         <h2 class="sec-title">WHO WE <span class="gold">ARE</span></h2>
@@ -265,7 +262,6 @@ textarea.form-input{min-height:80px;resize:vertical}
       </div>
     </div>
   </div>
-
   <div class="sec" id="why-sec">
     <div class="sec-tag">Why Habibi</div>
     <h2 class="sec-title">THE <span class="gold">DIFFERENCE</span></h2>
@@ -279,7 +275,6 @@ textarea.form-input{min-height:80px;resize:vertical}
       <div class="why-card"><div class="why-icon">📍</div><div class="why-title">Local NC Shop</div><div class="why-desc">Clayton, NC. Real people, real accountability.</div></div>
     </div>
   </div>
-
   <div class="sec-alt">
     <div class="sec-tag">How It Works</div>
     <h2 class="sec-title">THE <span class="gold">PROCESS</span></h2>
@@ -291,7 +286,6 @@ textarea.form-input{min-height:80px;resize:vertical}
       <div class="step"><div class="step-num">04</div><div class="step-title">Install or Ship</div><div class="step-desc">Drop off for install or receive your unit ready to drop in.</div></div>
     </div>
   </div>
-
   <div class="sec" id="contact-sec">
     <div class="sec-tag">Contact</div>
     <h2 class="sec-title">GET IN <span class="gold">TOUCH</span></h2>
@@ -317,166 +311,345 @@ textarea.form-input{min-height:80px;resize:vertical}
       </div>
     </div>
   </div>
-
   <div class="footer">
     <div class="footer-top">
-      <div>
-        <div class="footer-logo">HABIBI <span>MOTORSPORTS</span></div>
-        <div style="font-size:.67rem;color:var(--muted);margin-top:.15rem">Precision Rebuilt Transmissions · Clayton, NC</div>
-      </div>
-      <div class="footer-links">
-        <a onclick="showPage('home')">Home</a>
-        <a onclick="showPage('shop')">Shop</a>
-        <a onclick="document.getElementById('why-sec').scrollIntoView({behavior:'smooth'})">Why Us</a>
-        <a onclick="document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'})">Contact</a>
-      </div>
+      <div><div class="footer-logo">HABIBI <span>MOTORSPORTS</span></div><div style="font-size:.67rem;color:var(--muted);margin-top:.15rem">Precision Rebuilt Transmissions · Clayton, NC</div></div>
+      <div class="footer-links"><a onclick="showPage('home')">Home</a><a onclick="showPage('shop')">Shop</a><a onclick="document.getElementById('why-sec').scrollIntoView({behavior:'smooth'})">Why Us</a><a onclick="document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'})">Contact</a></div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2026 Habibi Motorsports · All rights reserved</div>
-      <div style="font-size:.66rem;color:rgba(201,168,76,0.35)">Built for performance.</div>
-    </div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 Habibi Motorsports · All rights reserved</div><div style="font-size:.66rem;color:rgba(201,168,76,0.35)">Built for performance.</div></div>
   </div>
 </div>
 
-<!-- ===== SHOP PAGE ===== -->
+<!-- SHOP -->
 <div class="page" id="page-shop">
   <div class="shop-hero">
     <div class="sec-tag">Shop</div>
     <h2 class="sec-title">OUR <span class="gold">TRANSMISSIONS</span></h2>
     <div class="divider"></div>
-    <p class="sec-sub">Configure your unit, choose your warranty, and add installation.</p>
+    <p class="sec-sub">Configure your unit, choose your warranty, and add installation. NC sales tax (7.25%) applied at checkout.</p>
     <div class="shop-filters">
       <button class="filter-btn active" onclick="filterShop('all',this)">All Units</button>
-      <button class="filter-btn" onclick="filterShop('automatic',this)">Automatic</button>
+      <button class="filter-btn" onclick="filterShop('ford',this)">Ford</button>
+      <button class="filter-btn" onclick="filterShop('gm',this)">GM</button>
       <button class="filter-btn" onclick="filterShop('performance',this)">Performance</button>
     </div>
   </div>
-
-  <div class="shop-grid">
-
-    <!-- 10R80 -->
-    <div class="prod-card" data-cat="automatic">
-      <div class="prod-card-img">
-        ⚙
-        <span class="prod-badge b-red">Ford 10-Speed</span>
-      </div>
-      <div class="prod-body">
-        <div class="prod-name">Ford 10R80</div>
-        <div class="prod-fits">Fits: Mustang GT · F-150 · Expedition · Explorer</div>
-        <div class="prod-desc">Complete rebuild — fresh clutch packs, solenoids, seals, and filter. Tested before it ships.</div>
-        <div class="prod-price">$3,000 <sub>base · 30-day warranty</sub></div>
-        <div class="config-section">
-          <div class="config-lbl">Warranty</div>
-          <div class="warranty-btns">
-            <button class="w-btn sel" onclick="setW('10r80',0,this)">30 Day<span class="w-sub">Included</span></button>
-            <button class="w-btn" onclick="setW('10r80',500,this)">12/12<span class="w-sub">+$500</span></button>
-            <button class="w-btn" onclick="setW('10r80',1000,this)">24/24<span class="w-sub">+$1,000</span></button>
-            <button class="w-btn" onclick="setW('10r80',1500,this)">36/36<span class="w-sub">+$1,500</span></button>
-          </div>
-          <div class="config-lbl">Installation</div>
-          <div class="labor-row" id="labor-10r80" onclick="toggleLabor('10r80')">
-            <div class="chk"><span class="chk-mark">✓</span></div>
-            <div>
-              <div class="labor-info-title">Add Drop-Off Labor</div>
-              <div class="labor-info-desc">We pull, install, fluid &amp; program on-site.</div>
-              <div class="labor-price-tag">+ $750</div>
-            </div>
-          </div>
-          <div class="total-row">
-            <div><div class="total-lbl">Your Total</div><div class="total-val" id="total-10r80">$3,000</div></div>
-            <button class="add-btn" onclick="addToast('Ford 10R80','10r80')">ADD TO CART</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PERFORMANCE -->
-    <div class="prod-card perf-card" data-cat="performance">
-      <div class="prod-card-img" style="background:linear-gradient(135deg,#1a0505,#2a0808,#0f0000)">
-        🏁
-        <span class="prod-badge b-red">Custom Build</span>
-      </div>
-      <div class="prod-body">
-        <div class="prod-name">Performance Build</div>
-        <div class="prod-fits" style="color:var(--red2)">10R80 · High-HP · Drag · Road Course · Street</div>
-        <div class="prod-desc">High-HP builds spec'd to your exact power goals. Every performance build is quoted individually.</div>
-        <div style="background:rgba(192,57,43,0.08);border:1px solid rgba(192,57,43,0.2);padding:.8rem;margin-top:.4rem">
-          <div style="font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--red2);font-weight:700;margin-bottom:.25rem">What we need to quote you</div>
-          <div style="font-size:.72rem;color:var(--muted);line-height:1.6">Vehicle · Engine &amp; power output · Use case · Any existing mods</div>
-        </div>
-        <button class="perf-cta-btn" onclick="showPage('home');setTimeout(()=>document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'}),80)">REQUEST PERFORMANCE QUOTE →</button>
-      </div>
-    </div>
-
-  </div>
-
+  <div class="shop-grid" id="shop-grid"></div>
   <div class="footer">
     <div class="footer-top">
-      <div>
-        <div class="footer-logo">HABIBI <span>MOTORSPORTS</span></div>
-        <div style="font-size:.67rem;color:var(--muted);margin-top:.15rem">Precision Rebuilt Transmissions · Clayton, NC</div>
+      <div><div class="footer-logo">HABIBI <span>MOTORSPORTS</span></div></div>
+      <div class="footer-links"><a onclick="showPage('home')">Home</a><a onclick="showPage('shop')">Shop</a><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'}),80)">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 Habibi Motorsports · All rights reserved</div></div>
+  </div>
+</div>
+
+<!-- CART -->
+<div class="page" id="page-cart">
+  <div class="cart-page">
+    <div style="margin-bottom:1.2rem">
+      <div class="sec-tag">Your Order</div>
+      <h2 class="sec-title">SHOPPING <span class="gold">CART</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div id="cart-empty-state" class="cart-empty-state" style="display:none">
+      <div class="cart-empty-icon">🛒</div>
+      <div class="cart-empty-text">Your Cart Is Empty</div>
+      <div class="cart-empty-sub">Head back to the shop and configure your transmission.</div>
+      <button class="btn-red" onclick="showPage('shop')">SHOP TRANSMISSIONS</button>
+    </div>
+    <div id="cart-content">
+      <div class="cart-items-list" id="cart-items-list"></div>
+      <div style="margin-bottom:1.2rem">
+        <div class="sec-tag" style="margin-bottom:.5rem">Payment Method</div>
+        <div class="payment-toggle">
+          <div class="pay-opt sel-cash" id="pay-cash" onclick="setPayment('cash')">
+            <div class="pay-opt-icon">💵</div>
+            <div class="pay-opt-title">Cash / Check</div>
+            <div class="pay-opt-desc">Pay in person at pickup or drop-off. No card surcharge.</div>
+            <span class="pay-opt-tag tag-green">NO SURCHARGE — BEST PRICE</span>
+          </div>
+          <div class="pay-opt" id="pay-card" onclick="setPayment('card')">
+            <div class="pay-opt-icon">💳</div>
+            <div class="pay-opt-title">Credit Card</div>
+            <div class="pay-opt-desc">Pay securely by credit or debit card.</div>
+            <span class="pay-opt-tag tag-gold">3% SURCHARGE APPLIES</span>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a onclick="showPage('home')">Home</a>
-        <a onclick="showPage('shop')">Shop</a>
-        <a onclick="showPage('home');setTimeout(()=>document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'}),80)">Contact</a>
+      <div class="cart-summary">
+        <div class="sec-tag" style="margin-bottom:.8rem">Order Summary</div>
+        <div class="summary-row"><span>Subtotal</span><span id="sum-subtotal">$0.00</span></div>
+        <div class="summary-row"><span>NC Sales Tax (7.25%)</span><span class="tax" id="sum-tax">$0.00</span></div>
+        <div class="summary-row" id="sum-surcharge-row" style="display:none"><span>Credit Card Surcharge (3%)</span><span class="surcharge" id="sum-surcharge">$0.00</span></div>
+        <div class="summary-row" id="sum-savings-row"><span>Cash / Check — No Card Surcharge</span><span class="savings">✓ Best Price</span></div>
+        <hr class="summary-divider">
+        <div class="summary-row grand-total"><span class="label">Grand Total</span><span class="val" id="sum-grand-total">$0.00</span></div>
+      </div>
+      <div class="checkout-form">
+        <div class="form-section-title">📋 Customer Information</div>
+        <div class="form-grid-2">
+          <div class="form-group"><label class="form-label">First Name <span class="req">*</span></label><input class="form-input" id="f-first" placeholder="First" type="text"></div>
+          <div class="form-group"><label class="form-label">Last Name <span class="req">*</span></label><input class="form-input" id="f-last" placeholder="Last" type="text"></div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-group"><label class="form-label">Email <span class="req">*</span></label><input class="form-input" id="f-email" placeholder="you@email.com" type="email"></div>
+          <div class="form-group"><label class="form-label">Phone <span class="req">*</span></label><input class="form-input" id="f-phone" placeholder="(919) 555-0000" type="tel"></div>
+        </div>
+        <div class="form-group"><label class="form-label">Address</label><input class="form-input" id="f-address" placeholder="123 Main St" type="text"></div>
+        <div class="form-grid-3">
+          <div class="form-group"><label class="form-label">City</label><input class="form-input" id="f-city" placeholder="Clayton" type="text"></div>
+          <div class="form-group"><label class="form-label">State</label><input class="form-input" id="f-state" placeholder="NC" type="text"></div>
+          <div class="form-group"><label class="form-label">ZIP</label><input class="form-input" id="f-zip" placeholder="27520" type="text"></div>
+        </div>
+        <div class="form-section-title" style="margin-top:1rem">🚗 Vehicle Information</div>
+        <div class="form-grid-2">
+          <div class="form-group"><label class="form-label">Year / Make / Model <span class="req">*</span></label><input class="form-input" id="f-vehicle" placeholder="2021 Ford Mustang GT" type="text"></div>
+          <div class="form-group"><label class="form-label">Mileage</label><input class="form-input" id="f-mileage" placeholder="45,000" type="text"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">VIN (Vehicle Identification Number) <span class="req">*</span></label>
+          <input class="form-input" id="f-vin" placeholder="1FATP8FF8M5100001" type="text" maxlength="17" oninput="this.value=this.value.toUpperCase()" style="font-family:'Barlow Condensed',sans-serif;letter-spacing:2px;font-size:.9rem">
+          <div class="vin-note">Your 17-character VIN is on your dashboard (driver's side), door jamb sticker, or registration. We use this to verify correct parts for your build.</div>
+        </div>
+        <div class="form-group"><label class="form-label">Notes / Special Requests</label><textarea class="form-input" id="f-notes" placeholder="Any additional info about your vehicle, symptoms, or special requests..." style="min-height:70px;resize:vertical"></textarea></div>
+        <div id="card-fields" style="display:none">
+          <div class="form-section-title" style="margin-top:1rem">💳 Card Information</div>
+          <div class="card-fields">
+            <div class="card-fields-title">Secure Payment Details</div>
+            <div class="form-group"><label class="form-label">Name on Card</label><input class="form-input" placeholder="John Smith" type="text"></div>
+            <div class="form-group"><label class="form-label">Card Number</label><input class="form-input" placeholder="•••• •••• •••• ••••" type="text" maxlength="19"></div>
+            <div class="form-grid-2">
+              <div class="form-group"><label class="form-label">Expiry</label><input class="form-input" placeholder="MM / YY" type="text" maxlength="7"></div>
+              <div class="form-group"><label class="form-label">CVV</label><input class="form-input" placeholder="•••" type="text" maxlength="4"></div>
+            </div>
+            <div style="font-size:.68rem;color:var(--muted);margin-top:.3rem">🔒 Your card information is encrypted and secure.</div>
+          </div>
+        </div>
+        <div id="cash-note" style="background:rgba(76,175,80,0.07);border:1px solid rgba(76,175,80,0.25);padding:.85rem;margin-top:.8rem">
+          <div style="font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:#4caf50;font-weight:700;margin-bottom:.2rem">💵 Cash / Check Payment</div>
+          <div style="font-size:.75rem;color:var(--muted);line-height:1.55">Payment is collected in person at our shop in Clayton, NC. We'll confirm your order and contact you to schedule drop-off or pickup. No card surcharge — best price guaranteed.</div>
+        </div>
+        <button class="place-order-btn cash" id="place-order-btn" onclick="placeOrder()">SUBMIT ORDER REQUEST</button>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2026 Habibi Motorsports · All rights reserved</div>
+  </div>
+  <div class="footer">
+    <div class="footer-top">
+      <div><div class="footer-logo">HABIBI <span>MOTORSPORTS</span></div></div>
+      <div class="footer-links"><a onclick="showPage('home')">Home</a><a onclick="showPage('shop')">Shop</a></div>
     </div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 Habibi Motorsports · All rights reserved</div></div>
+  </div>
+</div>
+
+<!-- SUCCESS -->
+<div class="page" id="page-success">
+  <div class="success-page">
+    <div class="success-icon">✅</div>
+    <div class="success-title">Order Submitted!</div>
+    <div class="success-sub">Thank you — we've received your order request. Our team in Clayton, NC will reach out within 1 business day to confirm your build and schedule your drop-off or shipment.</div>
+    <div class="success-order" id="success-order-summary"></div>
+    <button class="btn-red" onclick="showPage('shop');resetCart()">BACK TO SHOP</button>
+  </div>
+  <div class="footer">
+    <div class="footer-top"><div><div class="footer-logo">HABIBI <span>MOTORSPORTS</span></div></div><div class="footer-links"><a onclick="showPage('home')">Home</a><a onclick="showPage('shop')">Shop</a></div></div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 Habibi Motorsports · All rights reserved</div></div>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const state = { '10r80': { base: 3000, warranty: 0, labor: false } };
+const NC_TAX=0.0725,CC_FEE=0.03;
+const transmissions=[
+  {id:'10r80', name:'Ford 10R80', brand:'ford',badge:'Ford 10-Speed',  badgeClass:'b-red', fits:'Mustang GT · F-150 · Expedition · Explorer',      desc:'Complete rebuild — fresh clutch packs, solenoids, seals, and filter. Tested before it ships.',base:3000},
+  {id:'10l80', name:'GM 10L80',  brand:'gm',  badge:'GM 10-Speed',    badgeClass:'b-gold',fits:'Camaro SS/ZL1 · Silverado · Colorado · Equinox',    desc:'Full rebuild on the GM 10-speed. Upgraded solenoids, clutch packs, and gasket set.',base:2800},
+  {id:'10l90', name:'GM 10L90',  brand:'gm',  badge:'GM 10-Speed HD', badgeClass:'b-gold',fits:'Camaro ZL1 · CT4/CT5-V · High-Performance GM',      desc:'Heavy-duty 10-speed rebuild rated for higher torque applications.',base:3200},
+  {id:'10r140',name:'Ford 10R140',brand:'ford',badge:'Ford Heavy Duty',badgeClass:'b-red', fits:'F-250 · F-350 · Super Duty · Power Stroke Diesel',  desc:'Heavy-duty 10-speed for Super Duty trucks and diesel applications.',base:3800},
+  {id:'6l80',  name:'GM 6L80',   brand:'gm',  badge:'GM 6-Speed',     badgeClass:'b-gold',fits:'Silverado · Sierra · Tahoe · Yukon · CTS · Camaro', desc:'Full rebuild with updated clutch packs, valve body, and seals.',base:1895},
+  {id:'6r80',  name:'Ford 6R80', brand:'ford',badge:'Ford 6-Speed',   badgeClass:'b-red', fits:'Mustang GT/V6 · F-150 · Explorer · Expedition',     desc:'Full rebuild — new solenoids, clutch packs, filter, and all wear items.',base:1795},
+  {id:'8f35',  name:'Ford 8F35', brand:'ford',badge:'Ford 8-Speed',   badgeClass:'b-red', fits:'Escape · Edge · Fusion · Bronco Sport · EcoSport',  desc:'8-speed rebuild for Ford FWD/AWD. Complete teardown to factory spec.',base:2200},
+  {id:'8l90',  name:'GM 8L90',   brand:'gm',  badge:'GM 8-Speed',     badgeClass:'b-gold',fits:'Corvette · Camaro · Silverado · Sierra · CT6',      desc:'Premium GM 8-speed. Restored with upgraded internals and fresh solenoids.',base:2500},
+];
+const prodState={};
+transmissions.forEach(t=>{prodState[t.id]={base:t.base,warranty:0,labor:false}});
+let cart=[],paymentMethod='cash';
+const fmt=n=>n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
 
-function showPage(p) {
-  document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
-  document.getElementById('page-' + p).classList.add('active');
-  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const n = document.getElementById('nav-' + p);
-  if (n) n.classList.add('active');
-  window.scrollTo(0, 0);
+function buildCards(){
+  const grid=document.getElementById('shop-grid');
+  let html=transmissions.map(t=>`
+    <div class="prod-card" data-cat="${t.brand}">
+      <div class="prod-card-img" style="background:linear-gradient(135deg,#1a1a1a,${t.brand==='ford'?'#2a1010':'#0f1a10'},#0f0f0f)">⚙<span class="prod-badge ${t.badgeClass}">${t.badge}</span></div>
+      <div class="prod-body">
+        <div class="prod-name">${t.name}</div>
+        <div class="prod-fits">${t.fits}</div>
+        <div class="prod-desc">${t.desc}</div>
+        <div class="prod-price">$${t.base.toLocaleString()} <sub>base · 30-day warranty · +tax at checkout</sub></div>
+        <div class="config-section">
+          <div class="config-lbl">Warranty</div>
+          <div class="warranty-btns">
+            <button class="w-btn sel" onclick="setW('${t.id}',0,this)">30 Day<span class="w-sub">Included</span></button>
+            <button class="w-btn" onclick="setW('${t.id}',500,this)">12/12<span class="w-sub">+$500</span></button>
+            <button class="w-btn" onclick="setW('${t.id}',1000,this)">24/24<span class="w-sub">+$1,000</span></button>
+            <button class="w-btn" onclick="setW('${t.id}',1500,this)">36/36<span class="w-sub">+$1,500</span></button>
+          </div>
+          <div class="config-lbl">Installation</div>
+          <div class="labor-row" id="labor-${t.id}" onclick="toggleLabor('${t.id}')">
+            <div class="chk"><span class="chk-mark">✓</span></div>
+            <div><div class="labor-info-title">Add Drop-Off Labor</div><div class="labor-info-desc">We pull, install, fluid &amp; program on-site.</div><div class="labor-price-tag">+ $750</div></div>
+          </div>
+          <div class="total-row">
+            <div><div class="total-lbl">Subtotal (before tax)</div><div class="total-val" id="total-${t.id}">$${t.base.toLocaleString()}</div></div>
+            <button class="add-btn" id="addbtn-${t.id}" onclick="addToCart('${t.id}')">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>`).join('');
+  html+=`
+    <div class="prod-card perf-card" data-cat="performance">
+      <div class="prod-card-img" style="background:linear-gradient(135deg,#1a0505,#2a0808,#0f0000)">🏁<span class="prod-badge b-red">Custom Build</span></div>
+      <div class="prod-body">
+        <div class="prod-name">Performance Build</div>
+        <div class="prod-fits" style="color:var(--red2)">Any Unit · High-HP · Drag · Road Course · Street</div>
+        <div class="prod-desc">High-HP builds spec'd to your exact power goals. Every performance build is quoted individually.</div>
+        <div style="background:rgba(192,57,43,0.08);border:1px solid rgba(192,57,43,0.2);padding:.75rem;margin-top:.4rem">
+          <div style="font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--red2);font-weight:700;margin-bottom:.2rem">What we need to quote you</div>
+          <div style="font-size:.7rem;color:var(--muted);line-height:1.55">Vehicle · Engine &amp; power output · Use case · Any existing mods</div>
+        </div>
+        <button class="perf-cta-btn" onclick="showPage('home');setTimeout(()=>document.getElementById('contact-sec').scrollIntoView({behavior:'smooth'}),80)">REQUEST PERFORMANCE QUOTE →</button>
+      </div>
+    </div>`;
+  grid.innerHTML=html;
 }
 
-function setW(id, price, btn) {
-  state[id].warranty = price;
-  btn.closest('.warranty-btns').querySelectorAll('.w-btn').forEach(b => b.classList.remove('sel'));
-  btn.classList.add('sel');
-  updateTotal(id);
+function setW(id,price,btn){
+  prodState[id].warranty=price;
+  btn.closest('.warranty-btns').querySelectorAll('.w-btn').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');updateProdTotal(id);
 }
-
-function toggleLabor(id) {
-  state[id].labor = !state[id].labor;
-  document.getElementById('labor-' + id).classList.toggle('on', state[id].labor);
-  updateTotal(id);
+function toggleLabor(id){
+  prodState[id].labor=!prodState[id].labor;
+  document.getElementById('labor-'+id).classList.toggle('on',prodState[id].labor);
+  updateProdTotal(id);
 }
-
-function updateTotal(id) {
-  const s = state[id];
-  const t = s.base + s.warranty + (s.labor ? 750 : 0);
-  document.getElementById('total-' + id).textContent = '$' + t.toLocaleString();
+function updateProdTotal(id){
+  const s=prodState[id];
+  document.getElementById('total-'+id).textContent='$'+(s.base+s.warranty+(s.labor?750:0)).toLocaleString();
 }
-
-function addToast(name, id) {
-  const s = state[id];
-  const t = s.base + s.warranty + (s.labor ? 750 : 0);
-  const el = document.getElementById('toast');
-  el.innerHTML = '<strong>' + name + '</strong> — $' + t.toLocaleString();
-  el.classList.add('show');
-  setTimeout(() => el.classList.remove('show'), 3000);
+function addToCart(id){
+  const t=transmissions.find(x=>x.id===id);
+  const s=prodState[id];
+  const subtotal=s.base+s.warranty+(s.labor?750:0);
+  const wLabels={0:'30-Day',500:'12-Month/12k Mile',1000:'24-Month/24k Mile',1500:'36-Month/36k Mile'};
+  cart.push({uid:Date.now()+Math.random(),id,name:t.name,base:s.base,warrantyPrice:s.warranty,warrantyLabel:wLabels[s.warranty],labor:s.labor,subtotal});
+  const btn=document.getElementById('addbtn-'+id);
+  btn.textContent='✓ ADDED';btn.classList.add('added');
+  setTimeout(()=>{btn.textContent='ADD TO CART';btn.classList.remove('added')},2000);
+  updateCartBadge();
+  showToast(t.name,subtotal);
 }
-
-function filterShop(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+function updateCartBadge(){document.getElementById('cart-badge').textContent=cart.length;}
+function calcTotals(){
+  const subtotal=cart.reduce((s,i)=>s+i.subtotal,0);
+  const tax=Math.round(subtotal*NC_TAX*100)/100;
+  const surcharge=paymentMethod==='card'?Math.round(subtotal*CC_FEE*100)/100:0;
+  return{subtotal,tax,surcharge,grand:subtotal+tax+surcharge};
+}
+function renderCart(){
+  const empty=document.getElementById('cart-empty-state');
+  const content=document.getElementById('cart-content');
+  if(cart.length===0){empty.style.display='block';content.style.display='none';return;}
+  empty.style.display='none';content.style.display='block';
+  document.getElementById('cart-items-list').innerHTML=cart.map(item=>`
+    <div class="cart-item">
+      <div>
+        <div class="ci-name">${item.name}</div>
+        <div class="ci-details">
+          Warranty: <span>${item.warrantyLabel}</span><br>
+          Installation: <span>${item.labor?'Drop-Off Labor (+$750)':'Unit Only'}</span><br>
+          Base: <span>$${item.base.toLocaleString()}</span>${item.warrantyPrice>0?` &nbsp;·&nbsp; Warranty: <span>+$${item.warrantyPrice.toLocaleString()}</span>`:''}${item.labor?' &nbsp;·&nbsp; Labor: <span>+$750</span>':''}
+        </div>
+      </div>
+      <div class="ci-right">
+        <div class="ci-price">$${fmt(item.subtotal)}</div>
+        <button class="ci-remove" onclick="removeItem(${item.uid})">✕ Remove</button>
+      </div>
+    </div>`).join('');
+  updateSummaryDisplay();
+}
+function removeItem(uid){cart=cart.filter(i=>i.uid!==uid);updateCartBadge();renderCart();}
+function updateSummaryDisplay(){
+  const{subtotal,tax,surcharge,grand}=calcTotals();
+  document.getElementById('sum-subtotal').textContent='$'+fmt(subtotal);
+  document.getElementById('sum-tax').textContent='$'+fmt(tax);
+  document.getElementById('sum-surcharge').textContent='$'+fmt(surcharge);
+  document.getElementById('sum-grand-total').textContent='$'+fmt(grand);
+  document.getElementById('sum-surcharge-row').style.display=paymentMethod==='card'?'flex':'none';
+  document.getElementById('sum-savings-row').style.display=paymentMethod==='cash'?'flex':'none';
+}
+function setPayment(method){
+  paymentMethod=method;
+  document.getElementById('pay-cash').className='pay-opt'+(method==='cash'?' sel-cash':'');
+  document.getElementById('pay-card').className='pay-opt'+(method==='card'?' sel-card':'');
+  document.getElementById('card-fields').style.display=method==='card'?'block':'none';
+  document.getElementById('cash-note').style.display=method==='cash'?'block':'none';
+  const btn=document.getElementById('place-order-btn');
+  btn.className='place-order-btn'+(method==='cash'?' cash':'');
+  btn.textContent=method==='cash'?'SUBMIT ORDER REQUEST':'PLACE ORDER';
+  updateSummaryDisplay();
+}
+function placeOrder(){
+  const first=document.getElementById('f-first').value.trim();
+  const last=document.getElementById('f-last').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const phone=document.getElementById('f-phone').value.trim();
+  const vehicle=document.getElementById('f-vehicle').value.trim();
+  const vin=document.getElementById('f-vin').value.trim();
+  if(!first||!last){alert('Please enter your first and last name.');return;}
+  if(!email){alert('Please enter your email address.');return;}
+  if(!phone){alert('Please enter your phone number.');return;}
+  if(!vehicle){alert('Please enter your vehicle year, make, and model.');return;}
+  if(!vin||vin.length!==17){alert('Please enter a valid 17-character VIN.');return;}
+  if(cart.length===0){alert('Your cart is empty!');return;}
+  const{subtotal,tax,surcharge,grand}=calcTotals();
+  document.getElementById('success-order-summary').innerHTML=`
+    <div style="font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.7rem">Order Details</div>
+    ${cart.map(i=>`<div class="so-row"><span>${i.name} · ${i.warrantyLabel}${i.labor?' · w/ Labor':''}</span><span>$${fmt(i.subtotal)}</span></div>`).join('')}
+    <div class="so-row" style="margin-top:.4rem"><span>Subtotal</span><span>$${fmt(subtotal)}</span></div>
+    <div class="so-row"><span>NC Sales Tax (7.25%)</span><span style="color:#f0c040">$${fmt(tax)}</span></div>
+    ${surcharge>0?`<div class="so-row"><span>Credit Card Surcharge (3%)</span><span style="color:var(--red2)">+$${fmt(surcharge)}</span></div>`:''}
+    <div class="so-total"><span class="so-total-label">Grand Total</span><span class="so-total-val">$${fmt(grand)}</span></div>
+    <div style="margin-top:.9rem;padding-top:.7rem;border-top:1px solid var(--border);font-size:.75rem;color:var(--muted);line-height:1.7">
+      <strong style="color:var(--text)">${first} ${last}</strong><br>
+      ${email} &nbsp;·&nbsp; ${phone}<br>
+      Vehicle: ${vehicle}<br>
+      VIN: <span style="font-family:'Barlow Condensed',sans-serif;letter-spacing:1px;color:var(--gold)">${vin}</span><br>
+      Payment: ${paymentMethod==='cash'?'Cash / Check (No Surcharge)':'Credit Card (+3%)'}
+    </div>`;
+  showPage('success');
+}
+function resetCart(){cart=[];updateCartBadge();}
+function showPage(p){
+  document.querySelectorAll('.page').forEach(el=>el.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  const n=document.getElementById('nav-'+p);if(n)n.classList.add('active');
+  if(p==='cart')renderCart();
+  window.scrollTo(0,0);
+}
+function filterShop(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.prod-card').forEach(c => {
-    c.style.display = (cat === 'all' || c.dataset.cat === cat) ? 'block' : 'none';
-  });
+  document.querySelectorAll('.prod-card').forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none'});
 }
+function showToast(name,subtotal){
+  const el=document.getElementById('toast');
+  el.innerHTML='<strong>'+name+'</strong> added · $'+fmt(subtotal)+' <span style="cursor:pointer;color:var(--gold);text-decoration:underline" onclick="showPage(\'cart\')">View Cart →</span>';
+  el.classList.add('show');setTimeout(()=>el.classList.remove('show'),3500);
+}
+buildCards();
 </script>
 </body>
 </html>
